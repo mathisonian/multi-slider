@@ -43,28 +43,28 @@ var Handle = React.createClass({
       WebkitTapHighlightColor: "rgba(0,0,0,0)"
     };
 
+    var height = 40;
+    var width = 7;
+    var stroke='white';
+
     return <g style={style} {...events}>
-      <circle
-        key="1"
-        cx={x}
-        cy={y}
-        r={size}
+      <rect
         fill={color}
+        x={x-width/2}
+        y={y-height/2}
+        width={width}
+        height={height}
+        stroke={stroke}
+        key={1}
       />
       <circle
-        key="2"
-        opacity={active ? 0 : (hover ? 0.8 : 1)}
+        fill={color}
         cx={x}
         cy={y}
-        r={size-strokeWidth}
-        fill={bg}
-      />
-      <circle
-        key="3"
-        cx={x}
-        cy={y}
-        r={innerRadius}
-        fill={active ? bg : color}
+        r={height/2}
+        opacity={0}
+        stroke={stroke}
+        key={2}
       />
     </g>;
   }

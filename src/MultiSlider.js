@@ -32,7 +32,7 @@ var MultiSlider = React.createClass({
       handleSize: 16,
       padX: 20, // MUST be > handleSize to avoid clip issues
       width: 400,
-      height: 80,
+      height: 100,
       trackSize: 6,
       handleStrokeSize: 3,
       handleInnerDotSize: 4,
@@ -220,6 +220,7 @@ var MultiSlider = React.createClass({
             x={fromX}
             y={centerY}
             bg={bg}
+            value={prev}
             color={prevColor}
             strokeWidth={handleStrokeSize}
             innerRadius={handleInnerDotSize}
@@ -249,7 +250,7 @@ var MultiSlider = React.createClass({
     return <svg
       {...events}
       width="100%"
-      height="100%"
+      height={height}
       viewBox={"0 0 "+ width + " "+ height}>
       {tracks}
       {handles}

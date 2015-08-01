@@ -66,6 +66,11 @@ var Handle = React.createClass({
         stroke={stroke}
         key={2}
       />
+      <text
+        dx={x}
+        dy={y + height / 2 + 17}>
+        {Math.round(this.props.value)}
+      </text>
     </g>;
   }
 });

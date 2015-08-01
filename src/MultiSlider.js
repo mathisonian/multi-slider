@@ -31,7 +31,7 @@ var MultiSlider = React.createClass({
       colors: ["#000"], // define your own colors instead.
       handleSize: 16,
       padX: 20, // MUST be > handleSize to avoid clip issues
-      width: 400,
+      width: 300,
       height: 100,
       trackSize: 6,
       handleStrokeSize: 3,
@@ -174,7 +174,7 @@ var MultiSlider = React.createClass({
     var bg = props.bg;
     var padX = props.padX;
     var w =  width - 2*padX;
-    var centerY = height / 2;
+    var centerY = height / 2 - 25;
     var sum = this.sum();
     var touchEvents = useTouches();
 
@@ -250,7 +250,7 @@ var MultiSlider = React.createClass({
     return <svg
       {...events}
       width="100%"
-      height={height}
+      height="100%"
       viewBox={"0 0 "+ width + " "+ height}>
       {tracks}
       {handles}

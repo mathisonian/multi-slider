@@ -43,7 +43,7 @@ var Handle = React.createClass({
       WebkitTapHighlightColor: "rgba(0,0,0,0)"
     };
 
-    var height = 40;
+    var height = 30;
     var width = 7;
     var stroke='white';
 

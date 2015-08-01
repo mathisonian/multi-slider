@@ -39,7 +39,7 @@ var Handle = React.createClass({
       onMouseLeave: this.hoverOut
     }, props.events);
     var style = {
-      cursor: active ? "ew-resize" : "pointer",
+      cursor: "ew-resize",
       WebkitTapHighlightColor: "rgba(0,0,0,0)"
     };
 

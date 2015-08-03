@@ -221,6 +221,7 @@ var MultiSlider = React.createClass({
             y={centerY}
             bg={bg}
             value={prev}
+            next={next}
             color={prevColor}
             strokeWidth={handleStrokeSize}
             innerRadius={handleInnerDotSize}

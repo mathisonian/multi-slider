@@ -47,6 +47,8 @@ var Handle = React.createClass({
     var width = 7;
     var stroke='white';
 
+    var textOffsetThreshold = this.props.value >= 10 ? 12 : 6;
+
     return <g style={style} {...events}>
       <rect
         fill={color}
@@ -67,7 +69,7 @@ var Handle = React.createClass({
         key={2}
       />
       <text
-        dx={x}
+        dx={x + (this.props.next !== 100 && this.props.next - this.props.value < textOffsetThreshold ? (- (textOffsetThreshold - (this.props.next - this.props.value))) : 0)}
         dy={y + height / 2 + 17}>
         {Math.round(this.props.value)}
       </text>

@@ -1,4 +1,5 @@
 var React = require("react");
+var ReactDom = require('react-dom');
 var uncontrollable = require("uncontrollable");
 var Handle = require("./Handle");
 var Track = require("./Track");
@@ -47,7 +48,7 @@ var MultiSlider = React.createClass({
   },
 
   xForEvent: function (e) {
-    var node = this.getDOMNode();
+    var node = ReactDom.getDOMNode(this);
     var clientX = e.clientX;
     var m = node.getScreenCTM();
     var p = node.createSVGPoint();

@@ -48,7 +48,7 @@ var MultiSlider = React.createClass({
   },
 
   xForEvent: function (e) {
-    var node = ReactDom.getDOMNode(this);
+    var node = React.findDOMNode(this);
     var clientX = e.clientX;
     var m = node.getScreenCTM();
     var p = node.createSVGPoint();

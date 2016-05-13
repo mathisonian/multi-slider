@@ -69,7 +69,7 @@ var Handle = React.createClass({
         key={2}
       />
       <text
-        dx={x - 11}
+        dx={x - 15}
         dy={y + height / 2 + 17}>
         {props.label}
       </text>

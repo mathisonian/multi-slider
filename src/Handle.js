@@ -71,7 +71,7 @@ var Handle = React.createClass({
       <text
         dx={x + (this.props.next < 99 && this.props.next - this.props.value < textOffsetThreshold ? (- (textOffsetThreshold - (this.props.next - this.props.value))) : 0)}
         dy={y + height / 2 + 17}>
-        {Math.round(this.props.value) + (this.props.next > 99 ? '%' : '')}
+        {props.label}
       </text>
     </g>;
   }

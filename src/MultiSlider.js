@@ -221,6 +221,7 @@ var MultiSlider = React.createClass({
             x={fromX}
             y={centerY}
             bg={bg}
+            label={props.labels[i - 1]}
             value={prev}
             next={next}
             color={prevColor}

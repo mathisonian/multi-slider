@@ -69,7 +69,7 @@ var Handle = React.createClass({
         key={2}
       />
       <text
-        dx={x + (this.props.next < 99 && this.props.next - this.props.value < textOffsetThreshold ? (- (textOffsetThreshold - (this.props.next - this.props.value))) : 0)}
+        dx={x}
         dy={y + height / 2 + 17}>
         {props.label}
       </text>
